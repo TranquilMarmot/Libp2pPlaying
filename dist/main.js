@@ -41,6 +41,7 @@ var _a = require('electron'), app = _a.app, BrowserWindow = _a.BrowserWindow;
 //import { peerRouting } from './libp2p/peer_content_routing';
 //const { contentRouting } = require('./libp2p/peer_content_routing');
 //contentRouting();
+import './window';
 var mainWindow;
 function createWindow() {
     mainWindow = new BrowserWindow({
@@ -93,5 +94,4 @@ app.on('activate', function () {
         createWindow();
     }
 });
-export {};
 //# sourceMappingURL=main.js.map

@@ -26,6 +26,7 @@ import Libp2p from 'libp2p';
 //contentRouting();
 
 
+import './window';
 
 
 
