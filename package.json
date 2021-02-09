@@ -1,0 +1,67 @@
+{
+  "name": "Libp2pPlaying",
+  "description": "Libp2pPlaying",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run build && electron .",
+    "electron-rebuild": "$(npm bin)/electron-rebuild",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raphael10-collab/Libp2pPlaying"
+  },
+  "license": "UNLICENSED",
+  "build": {
+    "files": [
+      "dist/",
+      "node_modules/",
+      "package.json"
+    ],
+    "productName": "GGC",
+    "appId": "ggc.world",
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "devDependencies": {
+    "@types/jsdom": "^16.2.6",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@types/react-dnd": "^3.0.2",
+    "@types/react-dnd-html5-backend": "^3.0.2",
+    "@types/react-dom": "^17.0.0",
+    "electron": "^11.2.3",
+    "electron-rebuild": "^2.3.5",
+    "react-hot-loader": "^4.13.0",
+    "test-ipfs-example": "^3.0.0",
+    "ts-loader": "^8.0.16",
+    "typescript": "^4.1.3",
+    "webpack": "^5.21.2"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "electron"
+    ]
+  },
+  "dependencies": {
+    "cids": "^1.1.5",
+    "it-all": "^1.0.4",
+    "libp2p": "^0.30.7",
+    "libp2p-bootstrap": "^0.12.2",
+    "libp2p-kad-dht": "^0.20.6",
+    "libp2p-mdns": "^0.15.0",
+    "libp2p-mplex": "^0.10.2",
+    "libp2p-noise": "^2.0.4",
+    "libp2p-tcp": "^0.15.3",
+    "libp2p-webrtc-star": "^0.21.0",
+    "libp2p-websockets": "^0.15.2",
+    "multiaddr": "^8.1.2",
+    "multiaddr-to-uri": "^6.0.0",
+    "open": "^7.4.0"
+  }
+}

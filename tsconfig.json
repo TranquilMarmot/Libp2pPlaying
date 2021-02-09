@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016",
+      "es2017",
+      "dom",
+      "dom.iterable",
+    ],
+    "moduleResolution": "node",
+    "allowJs": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./dist/",
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strict": true ,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "suppressExcessPropertyErrors": true,
+  },
+  "exclude": [
+    "bin",
+    "css",
+    "**/**/*.js",
+    "electron/dist",
+    "electron/**/*.test*.ts",
+    //"node_modules",
+    "**/**/*.d.ts"
+  ]
+}
+
