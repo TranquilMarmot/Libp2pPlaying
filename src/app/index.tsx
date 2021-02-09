@@ -6,6 +6,6 @@ import './styles/index.less';
 ReactDOM.render(<App />, document.getElementById('app'));
 
 /** Hot Module Replacement */
-if (process.env.NODE_ENV == 'development' && module.hot) {
-  module.hot.accept();
-}
+//if (process.env.NODE_ENV == 'development' && module.hot) {
+  //module.hot.accept();
+//}
