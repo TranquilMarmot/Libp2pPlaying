@@ -6,7 +6,7 @@ export interface FileListProps {
 
 function list(files: File[]) {
   const label = (file: File) =>
-    `'${file.name}' of size '${file.size}' , type '${file.type}' and path '${file.path}'`
+    `'${file.name}' of size '${file.size}' , type '${file.type}' and name '${file.name}'`
   return files.map((file) => <li key={file.name}>{label(file)}</li>)
 }
 

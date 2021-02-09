@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { hot } from 'react-hot-loader';
 
+import '../../window';
+
 // https://github.com/libp2p/js-libp2p/blob/master/examples/libp2p-in-the-browser/index.js
 
 const items = [
@@ -25,9 +27,6 @@ const items = [
     //electronIpcRemoveAllListeners: (channel: string) => void;
   //},
 //}
-
-
-import '../../window';
 
 
 // https://github.com/electron/electron/issues/21437#issuecomment-573522360
@@ -86,7 +85,6 @@ function App() {
   },[]);
 
   const sendFilePathFunct = () => {
-
     // https://stackoverflow.com/questions/53753181/webcontents-send-and-ipcrenderer-on-not-working
 
     if (win === "A-Type") {
