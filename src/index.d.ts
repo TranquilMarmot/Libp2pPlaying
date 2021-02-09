@@ -8,9 +8,16 @@ declare module 'libp2p-webrtc-star';
 declare module 'libp2p-mplex';
 declare module 'libp2p-kad-dht';
 
+// https://github.com/Microsoft/TypeScript/issues/19816
+// https://stackoverflow.com/questions/12709074/how-do-you-explicitly-set-a-new-property-on-window-in-typescript?rq=1
+
+
+export {};
+
 declare global {
-  namespace NodeJS {
-    declare interface Window {
+  //namespace NodeJS {
+    //declare interface Window {
+    interface Window {
       "electron": {
           openNewWindow(): void;    
       },
@@ -47,5 +54,5 @@ declare global {
           }
       }
     }
-  }
+  //}
 }
